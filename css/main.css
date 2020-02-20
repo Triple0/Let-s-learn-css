@@ -1,0 +1,20 @@
+h1 {
+    text-align : center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+article {
+    width : auto;
+    max-width : 600px;
+    margin-left : auto; /* Margin left and right as auto will centre a BLOCK level element!*/
+    margin-right : auto;
+    padding : 16px;
+}
+
+p {
+    font-family : Arial, Helvetica, sans-serif;
+    font-size : 15px;
+    line-height : 1.5;
+    color : rgb(33, 33, 33); /* There are a few ways to do colours... */
+    background-color : #eeeeee;
+
+}
