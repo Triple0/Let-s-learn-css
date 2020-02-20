@@ -22,8 +22,17 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none; /* remove underline for hyperlinks*/
+    display: inline-block;
+    padding: 16px 32px;
 
 }
+
+nav ul li a:hover, nav ul li a:focus, nav ul li a:active{
+    background-color: rgb(50, 50, 50);
+    color: #fff;
+
+}
+
 article {
     width : auto;
     max-width : 600px;
