@@ -1,13 +1,40 @@
-h1 {
+
+* { /*Basic browser reset */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    background-image: url('../img/forrest-4747692_640.jpg');
+    background-size: cover; /* Cover the whole element*/
+    background-repeat: no-repeat; /* Show one of the images, instead of unlimited tiles*/
+
+}
+h1, h2 {
+    font-size: 46px;
     text-align : center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 50px;
+}
+
+h2 {
+    font-size: 32px;
+    padding-top: 16px 0;
 }
 
 nav {
     width: auto;
     max-width: 500px;
     background-color: salmon;
-    margin: 16px auto; /*16px - top and bottom auto - left and right*/
+    margin: 0 auto; /*16px - top and bottom auto - left and right*/
+    position: fixed;
+    top: 0px;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    
 }
 
 nav ul{
