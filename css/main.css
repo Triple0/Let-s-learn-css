@@ -63,14 +63,14 @@ body {
 
 }
 h1, h2 {
-    font-size: 46px;
+    font-size: 32px;
     text-align : center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-top: 50px;
 }
 
 h1 {
-    text-align: left;
+    text-align: center;
     font-weight : bold;
     font-family: 'JetBrains Mono', Consolas, monospace;
     padding-top: 50px;
@@ -78,10 +78,24 @@ h1 {
 
 h2 {
     font-family: 'Trade Winds', 'Comic Sans', cursive;
-    font-size: 32px;
+    font-size: 26px;
     padding-top: 16px 0;
+    text-align : center;
+}
+h3 {
+    font-size: 24px;   
 }
 
+h4 {
+    font-size: 22px;   
+}
+
+h5 {
+    font-size: 20px;   
+}
+h6 {
+    font-size: 18px;   
+}
 nav {
     width: auto;
     max-width: 500px;
@@ -267,4 +281,41 @@ p {
 #social-media-links a:focus .fab{
     color: rgba(50, 50, 50, 0.5);
 
+}
+
+@media screen and ( min-width: 500px) {
+    body {
+        background: red;
+    }
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+}
+
+@media screen and ( min-width: 1024px) {
+    body {
+        background: green;
+
+    }
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+    
+    
 }
