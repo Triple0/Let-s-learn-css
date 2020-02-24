@@ -243,3 +243,28 @@ p {
     height: 32px;  
 
 }
+
+#social-media-links{
+  list-style: none;
+  text-align: center;
+
+}
+
+
+#social-media-links > li{ /* > is a Direct Child Selector. The LT must be DIRECTLY inside the element with the "social-media-links" id in this case*/
+    display: inline-block;
+   
+  }
+
+#social-media-links .fab { /* > is a Direct Child Selector. The LT must be DIRECTLY inside the element with the "social-media-links" id in this case*/
+    color: rgba(50, 50, 50, 1);
+    font-size: 32px;
+   
+}
+
+#social-media-links a:hover .fab,
+#social-media-links a:active .fab,
+#social-media-links a:focus .fab{
+    color: rgba(50, 50, 50, 0.5);
+
+}
