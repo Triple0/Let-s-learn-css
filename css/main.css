@@ -40,10 +40,33 @@
     font-style: italic;
 }
 
+/* Defining a Keyframe animation...*/
+@keyframes my-animation {
+    0%{ /* We get to define at which point in an animation changes occur! */
+        transform: scale( 1 ); /* What should change at this point in th animations???*/
+    }
+    50%{
+        transform: scale( 1.2 );
+    }
+    75%{
+        transform: scale( 1.5 );
+    }
+    100%{
+        transform: scale( 1 );
+    }
+}
 
+@keyframes example {
+    0%   {background-color:red; left:0px; width: 50px; }
+    25%  {background-color:yellow; left:0px; width: 150px;}
+    50%  {background-color:orange; left:0px; width: 250px;}
+    75%  {background-color:lightgreen; left:0px; width: 400px;}
+    100% {background-color:green; left:0px; width: 1000px;}
+  }
 
 * { /*Basic browser reset */
     box-sizing: border-box;
+    background-repeat: ;
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -366,6 +389,24 @@ p {
     padding: 12px 20px;
 }
 
+/** Need more on nth-child pseudo-selectors? check out:
+https://css-tricks.com/useful-nth-child-recipes/ */
+.transition-transform button:nth-child(2){ /* We can select specific children! This can save us from ID- or CLASS! Only use IDs and classes where you need. */
+    color: lightblue;
+    background-color: black;
+}
+
+.transition-transform button:nth-child(3){
+    color: lightpink;
+    background-color: darkgoldenrod;
+
+}
+
+.transition-transform button:nth-child(n2+1){
+    color: lightpink;
+    background-color: darkgoldenrod;
+
+}
 /*Transform hover example*/
 
 .transition-transform div{
@@ -390,6 +431,36 @@ p {
     
 
 }
+
+/*Keyframe testing!*/
+#keyframe-test {
+    width: 100px;
+    height: 100px;
+    background-color: firebrick;
+    margin: 64px;
+    border-radius: 150px;
+    /* Let's animate!*/
+    animation-name: my-animation; /* Call it by name*/
+    animation-duration: 2s; /*How long should the animation be? */
+    animation-iteration-count: infinite; /* How many times should it happen? Can be a number. */
+    /* check-out: https://www.w3schools.com/CSSref/css3_pr_animation-directions.asp*/
+    animation-direction: normal; /* Can also be alternate or reverse! */
+}
+
+/*Keyframe testing!*/
+.test {
+    width: 0px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+
+  }
+  
 
 footer h2{
     text-align: center;
